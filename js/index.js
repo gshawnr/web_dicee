@@ -8,13 +8,13 @@ function changeDice() {
     .querySelector(".img2")
     .setAttribute("src", `images/dice${dice.dice2}.png`);
 
-  let player =
+  let winner =
     dice.dice1 > dice.dice2
       ? "Player 1 wins !!!"
       : dice.dice1 < dice.dice2
       ? "Player 2 wins !!!"
       : "Tie !!!";
-  setWinner(player);
+  setWinner(winner);
 
   return;
 }
